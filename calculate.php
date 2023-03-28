@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Ellipse Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>Ellipse Calculator</h1>
-    <?php
-      $a = floatval($_POST["a"]);
-      $b = floatval($_POST["b"]);
-      $area = round(pi() * $a * $b, 2);
-      $circumference = round(2 * pi() * sqrt(($a * $a + $b * $b) / 2), 2);
-      echo "<p>The area of the ellipse is: $area</p>";
-      echo "<p>The circumference of the ellipse is: $circumference</p>";
-    ?>
-  </body>
+<head>
+	<title>Elliptical Calculations</title>
+</head>
+<body>
+	<h1>Elliptical Calculations</h1>
+	<p>Enter the major and minor axis lengths of an ellipse below to calculate its area and circumference:</p>
+  <!--Show results back to user-->
+	<form method="post" action="index.php">
+		<label for="major_axis">a:</label>
+		<input type="text" name="major_axis" id="major_axis"><br><br>
+		<label for="minor_axis">b:</label>
+		<input type="text" name="minor_axis" id="minor_axis"><br><br>
+		<input type="submit" name="submit" value="Calculate">
+	</form>
+</body>
 </html>

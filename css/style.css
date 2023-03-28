@@ -1,22 +1,22 @@
 /* Created by: Savyon
 * Created on: Mar 2023
-* This CSS file defines the style for index.html
-* ICS2O-Unit2-01-HTML-JS-HelloWorld
+* This CSS file defines the style for index.php
+* ICS2O-Unit2-01-HTML-PHP-HelloWorld
 */
 
 body {
-	background-color: rgb(3, 160, 142);
+	background-color: rgb(255, 170, 0);
 }
 
 h1 {
-	background-color: rgb(102, 38, 223);
+	background-color: rgb(145, 145, 145);
 	color: hsl(0, 0%, 0%);
 	padding: 40px;
 	text-align: center;
 }
 
 p {
-	background-color: #6257f4;
+	background-color: #919191;
 }
 
 div {
@@ -30,5 +30,9 @@ label {
 }
 
 #display-results{
-  background-color: #050505;
+  background-color: #919191;
+}
+
+table {
+  background-color: #919191
 }
