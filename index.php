@@ -19,9 +19,11 @@
 	<h1>Elliptical Calculations</h1>
   <!--id for values-->
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-		<label for="major_axis">a:</label>
+		<label for="major_axis">Semimajor axis a:</label> 
+    <input type="text" id="a" placeholder="Enter side a (m)" 
 		<input type="text" name="major_axis" id="major_axis"><br><br>
-		<label for="minor_axis">b:</label>
+		<label for="minor_axis">Semiminor axis b:</label>
+    <input type="text" id="b" placeholder="Enter side b (m)" 
 		<input type="text" name="minor_axis" id="minor_axis"><br><br>
 		<input type="submit" name="submit" value="Calculate">
 	</form>
@@ -33,8 +35,8 @@
 			$minor_axis = $_POST["minor_axis"];
 			$area = pi() * $major_axis * $minor_axis;
 			$circumference = 2 * pi() * sqrt(($major_axis * $major_axis + $minor_axis * $minor_axis) / 2);
-			echo "<p>Area: " . round($area, 2) . "m2</p>";
-			echo "<p>Circumference: " . round($circumference, 2) . "m2</p>";
+			echo "<p>Area: " . round($area, 2) . "m<sup>2</sup></p>";
+			echo "<p>Circumference: " . round($circumference, 2) . "m<sup>2</sup></p>";
 		}
 	?>
       <!--table of circles and ellipses-->
@@ -53,7 +55,7 @@
       <td class="mdl-data-table__cell--non-numeric">Pizza</td>
     </tr>
     <tr>
-      <td class="mdl-data-table__cell--non-numeric">Football</td>
+      <td class="mdl-data-table__cell--non-numeric"> A football</td>
     </tr>
   </tbody>
 </table>

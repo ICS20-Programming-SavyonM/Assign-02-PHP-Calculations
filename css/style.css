@@ -9,14 +9,14 @@ body {
 }
 
 h1 {
-	background-color: rgb(145, 145, 145);
+	background-color: rgb(193, 21, 21);
 	color: hsl(0, 0%, 0%);
 	padding: 40px;
 	text-align: center;
 }
 
 p {
-	background-color: #919191;
+	background-color: #ffffff;
 }
 
 div {
@@ -30,7 +30,7 @@ label {
 }
 
 #display-results{
-  background-color: #919191;
+  background-color: #bd1414;
 }
 
 table {
